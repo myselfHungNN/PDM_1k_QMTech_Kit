@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\impact.xsl
+OUTFILE=F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001
+LICENSE=iMPACT
+USER_INFO=iMPACT

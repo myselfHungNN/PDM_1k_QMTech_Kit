@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.ncd
+OUTFILE=F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.bit
+FAMILY=Spartan6
+PART=xc6slx16-2ftg256
+WORKINGDIR=F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001
+LICENSE=WebPack
+USER_INFO=__0_0_0

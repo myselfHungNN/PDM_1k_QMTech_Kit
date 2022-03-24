@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.20131013
+# Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.20131013
+DATE            01/22/2022 - 11:39
+SOURCE          F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\M25P80.mcs
+DEVICE          1024K
+DATA_WIDTH      1
+FILL_DATA       0xFF
+SIGNATURE       0x08EDA99C
+START_ADDRESS   0x00000000 END_ADDRESS 0x00071543 DIRECTION_UP   "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.bit" 6slx16ftg256

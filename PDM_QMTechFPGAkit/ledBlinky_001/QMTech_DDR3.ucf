@@ -1,0 +1,39 @@
+//global system clock
+NET "i_sys_clk_50M" 		LOC = A10 	| IOSTANDARD = LVTTL;
+
+//switch 1 signal 
+//NET "i_switch_SW2" 	LOC = T8 	| IOSTANDARD = LVTTL;
+
+// switch 2 signal 
+//NET "i_switch_SW3" 	LOC = R7 	| IOSTANDARD = LVTTL;
+
+//User LED 1 signal
+NET "o_led_drive_D1" 		LOC = T9 	| IOSTANDARD = LVTTL;
+NET "o_led_ext_drive"      LOC = A14   | IOSTANDARD = LVTTL;
+
+//USER LED 2 signal
+NET "o_led_drive_D3" 		LOC = R9 	| IOSTANDARD = LVTTL;
+
+// CLK_REF signal
+NET "o_CLK_REF"            LOC = B14    | IOSTANDARD = LVTTL;
+
+// CLK_100K signal
+NET "o_CLK_100K"            LOC = A13    | IOSTANDARD = LVTTL;
+
+// CLK_200K signal
+NET "o_CLK_200K"            LOC = C13    | IOSTANDARD = LVTTL; 
+
+//  CLK_1 signal
+NET "i_CLK_1"              LOC = F10    | IOSTANDARD = LVTTL;
+NET "i_CLK_1" CLOCK_DEDICATED_ROUTE = FALSE;
+
+// CLK_2 signal
+NET "i_CLK_2"              LOC = C10    | IOSTANDARD = LVTTL;
+NET "i_CLK_2" CLOCK_DEDICATED_ROUTE = FALSE;
+
+// PDM_1 Signal
+NET "o_PDM_1"              LOC = A9    | IOSTANDARD = LVTTL;
+
+// PDM - 2 signal
+NET "o_PDM_2"              LOC = A8    | IOSTANDARD = LVTTL;
+

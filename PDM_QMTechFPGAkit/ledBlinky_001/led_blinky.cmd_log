@@ -1,0 +1,228 @@
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 
+xst -intstyle ise -ifn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.xst" -ofn "F:/__FTEX_v2/__Digest/QMTech_FPGA/ledBlinky_001/led_blinky.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc QMTech_DDR3.ucf -p xc6slx16-ftg256-2 led_blinky.ngc led_blinky.ngd  
+map -intstyle ise -p xc6slx16-ftg256-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o led_blinky_map.ncd led_blinky.ngd led_blinky.pcf 
+par -w -intstyle ise -ol high -mt off led_blinky_map.ncd led_blinky.ncd led_blinky.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr led_blinky.pcf -ucf QMTech_DDR3.ucf 
+bitgen -intstyle ise -f led_blinky.ut led_blinky.ncd 

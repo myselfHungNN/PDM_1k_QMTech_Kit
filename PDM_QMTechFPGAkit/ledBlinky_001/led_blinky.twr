@@ -1,0 +1,99 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 2
+-n 3 -fastpaths -xml led_blinky.twx led_blinky.ncd -o led_blinky.twr
+led_blinky.pcf -ucf QMTech_DDR3.ucf
+
+Design file:              led_blinky.ncd
+Physical constraint file: led_blinky.pcf
+Device,package,speed:     xc6slx16,ftg256,C,-2 (PRODUCTION 1.23 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock i_CLK_1 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+o_PDM_1     |        15.189(R)|      SLOW  |         7.427(R)|      FAST  |i_CLK_1_BUFGP     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock i_CLK_2 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+o_PDM_2     |        10.926(R)|      SLOW  |         4.993(R)|      FAST  |i_CLK_2_BUFGP     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock i_sys_clk_50M to Pad
+---------------+-----------------+------------+-----------------+------------+-------------------+--------+
+               |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                   | Clock  |
+Destination    |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)  | Phase  |
+---------------+-----------------+------------+-----------------+------------+-------------------+--------+
+o_CLK_100K     |        10.676(R)|      SLOW  |         4.885(R)|      FAST  |i_sys_clk_50M_BUFGP|   0.000|
+o_CLK_200K     |        10.534(R)|      SLOW  |         4.869(R)|      FAST  |i_sys_clk_50M_BUFGP|   0.000|
+o_CLK_REF      |         9.925(R)|      SLOW  |         4.484(R)|      FAST  |i_sys_clk_50M_BUFGP|   0.000|
+o_led_drive_D1 |        11.266(R)|      SLOW  |         5.171(R)|      FAST  |i_sys_clk_50M_BUFGP|   0.000|
+o_led_drive_D3 |        11.761(R)|      SLOW  |         5.414(R)|      FAST  |i_sys_clk_50M_BUFGP|   0.000|
+o_led_ext_drive|        12.722(R)|      SLOW  |         6.065(R)|      FAST  |i_sys_clk_50M_BUFGP|   0.000|
+---------------+-----------------+------------+-----------------+------------+-------------------+--------+
+
+Clock to Setup on destination clock i_CLK_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_CLK_1        |    3.807|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_CLK_2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_CLK_2        |    3.292|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_sys_clk_50M
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_sys_clk_50M  |    4.561|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Sat Jan 22 16:22:18 2022 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 223 MB
+
+
+

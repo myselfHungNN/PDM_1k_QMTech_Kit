@@ -1,0 +1,694 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: led_blinky.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "led_blinky.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "led_blinky"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-ftg256
+
+---- Source Options
+Top Module Name                    : led_blinky
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.v" into library work
+Parsing module <led_blinky>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <led_blinky>.
+WARNING:HDLCompiler:413 - "F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.v" Line 117: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.v" Line 143: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.v" Line 156: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.v" Line 168: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.v" Line 291: Result of 32-bit expression is truncated to fit in 16-bit target.
+WARNING:HDLCompiler:413 - "F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.v" Line 317: Result of 32-bit expression is truncated to fit in 16-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <led_blinky>.
+    Related source file is "F:\__FTEX_v2\__Digest\QMTech_FPGA\ledBlinky_001\led_blinky.v".
+        NBITS = 16
+        c_CNT_1HZ = 25000000
+        c_CNT_1625K = 15
+        c_CNT_100K = 250
+        c_CNT_200K = 125
+        c_IDX_100 = 100
+        MAX_x1 = 3270
+        MAX_x2 = 6540
+        MAX_x3 = 9810
+        MAX_x4 = 13080
+        MAX_x5 = 16350
+        MAX_x6 = 19620
+        MAX_x7 = 22890
+        MAX_x8 = 26160
+        MAX_x9 = 2943
+    Found 8-bit register for signal <r_CNT_1625K>.
+    Found 1-bit register for signal <o_led_drive_D1>.
+    Found 62-bit register for signal <r_CNT_1HZ>.
+    Found 1-bit register for signal <o_CLK_100K>.
+    Found 8-bit register for signal <r_CNT_100K>.
+    Found 1-bit register for signal <o_CLK_200K>.
+    Found 8-bit register for signal <r_CNT_200K>.
+    Found 8-bit register for signal <r_Index_100>.
+    Found 16-bit register for signal <r_din_reg_PDM1>.
+    Found 16-bit register for signal <r_error1_PDM1>.
+    Found 16-bit register for signal <r_error0_PDM1>.
+    Found 1-bit register for signal <o_PDM_1>.
+    Found 16-bit register for signal <r_error_PDM1>.
+    Found 16-bit register for signal <r_din_reg_PDM2>.
+    Found 16-bit register for signal <r_error1_PDM2>.
+    Found 16-bit register for signal <r_error0_PDM2>.
+    Found 1-bit register for signal <o_PDM_2>.
+    Found 16-bit register for signal <r_error_PDM2>.
+    Found 1-bit register for signal <o_CLK_REF>.
+    Found 16-bit subtractor for signal <r_error_PDM1[15]_r_din_reg_PDM1[15]_sub_163_OUT> created at line 292.
+    Found 16-bit subtractor for signal <r_error_PDM2[15]_r_din_reg_PDM2[15]_sub_174_OUT> created at line 318.
+    Found 8-bit adder for signal <r_CNT_1625K[7]_GND_1_o_add_2_OUT> created at line 117.
+    Found 62-bit adder for signal <r_CNT_1HZ[61]_GND_1_o_add_7_OUT> created at line 130.
+    Found 8-bit adder for signal <r_CNT_100K[7]_GND_1_o_add_12_OUT> created at line 143.
+    Found 8-bit adder for signal <r_CNT_200K[7]_GND_1_o_add_17_OUT> created at line 156.
+    Found 8-bit adder for signal <r_Index_100[7]_GND_1_o_add_22_OUT> created at line 168.
+    Found 17-bit adder for signal <n0247> created at line 291.
+    Found 17-bit adder for signal <n0249> created at line 317.
+    Found 16-bit subtractor for signal <GND_1_o_GND_1_o_sub_162_OUT<15:0>> created at line 291.
+    Found 16-bit subtractor for signal <GND_1_o_GND_1_o_sub_173_OUT<15:0>> created at line 317.
+    Found 8x1-bit Read Only RAM for signal <_n2884>
+    Found 4x1-bit Read Only RAM for signal <_n2898>
+    Found 128x3-bit Read Only RAM for signal <_n3033>
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <r_sin_val<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 8-bit comparator greater for signal <n0000> created at line 111
+    Found 8-bit comparator greater for signal <n0028> created at line 163
+    Found 16-bit comparator lessequal for signal <n0171> created at line 299
+    Found 16-bit comparator lessequal for signal <n0182> created at line 325
+    Summary:
+	inferred   3 RAM(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred 228 D-type flip-flop(s).
+	inferred  13 Latch(s).
+	inferred   4 Comparator(s).
+	inferred  20 Multiplexer(s).
+Unit <led_blinky> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 128x3-bit single-port Read Only RAM                   : 1
+ 4x1-bit single-port Read Only RAM                     : 1
+ 8x1-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 11
+ 16-bit subtractor                                     : 4
+ 17-bit adder                                          : 2
+ 62-bit adder                                          : 1
+ 8-bit adder                                           : 4
+# Registers                                            : 19
+ 1-bit register                                        : 6
+ 16-bit register                                       : 8
+ 62-bit register                                       : 1
+ 8-bit register                                        : 4
+# Latches                                              : 13
+ 1-bit latch                                           : 13
+# Comparators                                          : 4
+ 16-bit comparator lessequal                           : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 20
+ 1-bit 2-to-1 multiplexer                              : 18
+ 16-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <led_blinky>.
+The following registers are absorbed into counter <r_CNT_1625K>: 1 register on signal <r_CNT_1625K>.
+The following registers are absorbed into counter <r_CNT_1HZ>: 1 register on signal <r_CNT_1HZ>.
+The following registers are absorbed into counter <r_CNT_100K>: 1 register on signal <r_CNT_100K>.
+The following registers are absorbed into counter <r_CNT_200K>: 1 register on signal <r_CNT_200K>.
+The following registers are absorbed into counter <r_Index_100>: 1 register on signal <r_Index_100>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n3033> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 3-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_Index_100<6:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2884> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_Index_100<2:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n2898> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 1-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <r_Index_100<1:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <led_blinky> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 3
+ 128x3-bit single-port distributed Read Only RAM       : 1
+ 4x1-bit single-port distributed Read Only RAM         : 1
+ 8x1-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 6
+ 16-bit adder                                          : 2
+ 16-bit subtractor                                     : 4
+# Counters                                             : 5
+ 62-bit up counter                                     : 1
+ 8-bit up counter                                      : 4
+# Registers                                            : 134
+ Flip-Flops                                            : 134
+# Comparators                                          : 4
+ 16-bit comparator lessequal                           : 2
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 18
+ 1-bit 2-to-1 multiplexer                              : 16
+ 16-bit 2-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <r_din_reg_PDM1_12> in Unit <led_blinky> is equivalent to the following 3 FFs/Latches, which will be removed : <r_din_reg_PDM1_13> <r_din_reg_PDM1_14> <r_din_reg_PDM1_15> 
+INFO:Xst:2261 - The FF/Latch <r_din_reg_PDM2_12> in Unit <led_blinky> is equivalent to the following 3 FFs/Latches, which will be removed : <r_din_reg_PDM2_13> <r_din_reg_PDM2_14> <r_din_reg_PDM2_15> 
+
+Optimizing unit <led_blinky> ...
+INFO:Xst:2261 - The FF/Latch <r_error0_PDM1_0> in Unit <led_blinky> is equivalent to the following FF/Latch, which will be removed : <r_error1_PDM1_0> 
+INFO:Xst:2261 - The FF/Latch <r_error0_PDM1_1> in Unit <led_blinky> is equivalent to the following FF/Latch, which will be removed : <r_error1_PDM1_1> 
+INFO:Xst:2261 - The FF/Latch <r_error0_PDM1_2> in Unit <led_blinky> is equivalent to the following FF/Latch, which will be removed : <r_error1_PDM1_2> 
+INFO:Xst:2261 - The FF/Latch <r_error0_PDM2_0> in Unit <led_blinky> is equivalent to the following FF/Latch, which will be removed : <r_error1_PDM2_0> 
+INFO:Xst:2261 - The FF/Latch <r_error0_PDM2_1> in Unit <led_blinky> is equivalent to the following FF/Latch, which will be removed : <r_error1_PDM2_1> 
+INFO:Xst:2261 - The FF/Latch <r_error0_PDM2_2> in Unit <led_blinky> is equivalent to the following FF/Latch, which will be removed : <r_error1_PDM2_2> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block led_blinky, actual ratio is 5.
+FlipFlop r_Index_100_0 has been replicated 1 time(s)
+FlipFlop r_Index_100_1 has been replicated 1 time(s)
+FlipFlop r_Index_100_5 has been replicated 1 time(s)
+FlipFlop r_Index_100_6 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+Processing Unit <led_blinky> :
+	Found 2-bit shift register for signal <r_error_PDM1_0>.
+	Found 2-bit shift register for signal <r_error_PDM1_1>.
+	Found 2-bit shift register for signal <r_error_PDM1_2>.
+	Found 2-bit shift register for signal <r_error_PDM2_0>.
+	Found 2-bit shift register for signal <r_error_PDM2_1>.
+	Found 2-bit shift register for signal <r_error_PDM2_2>.
+Unit <led_blinky> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 208
+ Flip-Flops                                            : 208
+# Shift Registers                                      : 6
+ 2-bit shift register                                  : 6
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : led_blinky.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 727
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 89
+#      LUT2                        : 146
+#      LUT3                        : 61
+#      LUT4                        : 28
+#      LUT5                        : 6
+#      LUT6                        : 53
+#      MUXCY                       : 174
+#      MUXF7                       : 10
+#      VCC                         : 1
+#      XORCY                       : 152
+# FlipFlops/Latches                : 227
+#      FD                          : 184
+#      FDE                         : 6
+#      FDR                         : 24
+#      LD                          : 13
+# Shift Registers                  : 6
+#      SRLC16E                     : 6
+# Clock Buffers                    : 3
+#      BUFGP                       : 3
+# IO Buffers                       : 8
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16ftg256-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             227  out of  18224     1%  
+ Number of Slice LUTs:                  395  out of   9112     4%  
+    Number used as Logic:               389  out of   9112     4%  
+    Number used as Memory:                6  out of   2176     0%  
+       Number used as SRL:                6
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    417
+   Number with an unused Flip Flop:     190  out of    417    45%  
+   Number with an unused LUT:            22  out of    417     5%  
+   Number of fully used LUT-FF pairs:   205  out of    417    49%  
+   Number of unique control sets:        10
+
+IO Utilization: 
+ Number of IOs:                          11
+ Number of bonded IOBs:                  11  out of    186     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     16    18%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+_n0662(out1:O)                     | NONE(*)(r_sin_val_8)   | 13    |
+i_CLK_1                            | BUFGP                  | 59    |
+i_CLK_2                            | BUFGP                  | 59    |
+i_sys_clk_50M                      | BUFGP                  | 90    |
+r_TOGGLE_100K                      | NONE(r_Index_100_0)    | 12    |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 4.846ns (Maximum Frequency: 206.350MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 5.176ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_CLK_1'
+  Clock period: 4.211ns (frequency: 237.473MHz)
+  Total number of paths / destination ports: 1935 / 46
+-------------------------------------------------------------------------
+Delay:               4.211ns (Levels of Logic = 3)
+  Source:            r_din_reg_PDM1_12 (FF)
+  Destination:       r_error_PDM1_3 (FF)
+  Source Clock:      i_CLK_1 rising
+  Destination Clock: i_CLK_1 rising
+
+  Data Path: r_din_reg_PDM1_12 to r_error_PDM1_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.525   1.557  r_din_reg_PDM1_12 (r_din_reg_PDM1_12)
+     LUT5:I0->O            0   0.254   0.000  Mcompar_r_error_PDM1[15]_r_din_reg_PDM1[15]_LessThan_168_o_lutdi6 (Mcompar_r_error_PDM1[15]_r_din_reg_PDM1[15]_LessThan_168_o_lutdi6)
+     MUXCY:DI->O          14   0.420   1.127  Mcompar_r_error_PDM1[15]_r_din_reg_PDM1[15]_LessThan_168_o_cy<6> (r_error_PDM1[15]_r_din_reg_PDM1[15]_LessThan_168_o)
+     LUT3:I2->O            1   0.254   0.000  Mmux_r_error0_PDM1[15]_r_error1_PDM1[15]_mux_168_OUT161 (r_error0_PDM1[15]_r_error1_PDM1[15]_mux_168_OUT<9>)
+     FD:D                      0.074          r_error_PDM1_9
+    ----------------------------------------
+    Total                      4.211ns (1.527ns logic, 2.684ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_CLK_2'
+  Clock period: 4.211ns (frequency: 237.473MHz)
+  Total number of paths / destination ports: 1935 / 46
+-------------------------------------------------------------------------
+Delay:               4.211ns (Levels of Logic = 3)
+  Source:            r_din_reg_PDM2_12 (FF)
+  Destination:       r_error_PDM2_3 (FF)
+  Source Clock:      i_CLK_2 rising
+  Destination Clock: i_CLK_2 rising
+
+  Data Path: r_din_reg_PDM2_12 to r_error_PDM2_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              14   0.525   1.557  r_din_reg_PDM2_12 (r_din_reg_PDM2_12)
+     LUT5:I0->O            0   0.254   0.000  Mcompar_r_error_PDM2[15]_r_din_reg_PDM2[15]_LessThan_179_o_lutdi6 (Mcompar_r_error_PDM2[15]_r_din_reg_PDM2[15]_LessThan_179_o_lutdi6)
+     MUXCY:DI->O          14   0.420   1.127  Mcompar_r_error_PDM2[15]_r_din_reg_PDM2[15]_LessThan_179_o_cy<6> (r_error_PDM2[15]_r_din_reg_PDM2[15]_LessThan_179_o)
+     LUT3:I2->O            1   0.254   0.000  Mmux_r_error0_PDM2[15]_r_error1_PDM2[15]_mux_179_OUT161 (r_error0_PDM2[15]_r_error1_PDM2[15]_mux_179_OUT<9>)
+     FD:D                      0.074          r_error_PDM2_9
+    ----------------------------------------
+    Total                      4.211ns (1.527ns logic, 2.684ns route)
+                                       (36.3% logic, 63.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'i_sys_clk_50M'
+  Clock period: 4.846ns (frequency: 206.350MHz)
+  Total number of paths / destination ports: 6178 / 114
+-------------------------------------------------------------------------
+Delay:               4.846ns (Levels of Logic = 12)
+  Source:            r_CNT_1HZ_49 (FF)
+  Destination:       r_TOGGLE_1HZ (FF)
+  Source Clock:      i_sys_clk_50M rising
+  Destination Clock: i_sys_clk_50M rising
+
+  Data Path: r_CNT_1HZ_49 to r_TOGGLE_1HZ
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.525   1.181  r_CNT_1HZ_49 (r_CNT_1HZ_49)
+     LUT6:I0->O            1   0.254   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_lut<1> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_lut<1>)
+     MUXCY:S->O            1   0.215   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<1> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<2> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<3> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<4> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<5> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<6> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<7> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<8> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<9> (r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<9>)
+     MUXCY:CI->O          63   0.235   1.922  r_CNT_1HZ[61]_GND_1_o_equal_7_o<61>_wg_cy<10> (r_CNT_1HZ[61]_GND_1_o_equal_7_o)
+     LUT2:I1->O            1   0.254   0.000  r_CNT_1HZ_0_rstpot (r_CNT_1HZ_0_rstpot)
+     FD:D                      0.074          r_CNT_1HZ_0
+    ----------------------------------------
+    Total                      4.846ns (1.743ns logic, 3.103ns route)
+                                       (36.0% logic, 64.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'r_TOGGLE_100K'
+  Clock period: 4.082ns (frequency: 245.005MHz)
+  Total number of paths / destination ports: 148 / 12
+-------------------------------------------------------------------------
+Delay:               4.082ns (Levels of Logic = 7)
+  Source:            r_Index_100_2 (FF)
+  Destination:       r_Index_100_6 (FF)
+  Source Clock:      r_TOGGLE_100K rising
+  Destination Clock: r_TOGGLE_100K rising
+
+  Data Path: r_Index_100_2 to r_Index_100_6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              40   0.525   1.654  r_Index_100_2 (r_Index_100_2)
+     LUT1:I0->O            1   0.254   0.000  Mcount_r_Index_100_cy<2>_rt (Mcount_r_Index_100_cy<2>_rt)
+     MUXCY:S->O            1   0.215   0.000  Mcount_r_Index_100_cy<2> (Mcount_r_Index_100_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_r_Index_100_cy<3> (Mcount_r_Index_100_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_r_Index_100_cy<4> (Mcount_r_Index_100_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_r_Index_100_cy<5> (Mcount_r_Index_100_cy<5>)
+     XORCY:CI->O           2   0.206   0.834  Mcount_r_Index_100_xor<6> (Result<6>2)
+     LUT2:I0->O            1   0.250   0.000  r_Index_100_6_rstpot (r_Index_100_6_rstpot)
+     FD:D                      0.074          r_Index_100_6
+    ----------------------------------------
+    Total                      4.082ns (1.594ns logic, 2.488ns route)
+                                       (39.0% logic, 61.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_sys_clk_50M'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              5.176ns (Levels of Logic = 2)
+  Source:            r_TOGGLE_1HZ (FF)
+  Destination:       o_led_drive_D3 (PAD)
+  Source Clock:      i_sys_clk_50M rising
+
+  Data Path: r_TOGGLE_1HZ to o_led_drive_D3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               4   0.525   0.803  r_TOGGLE_1HZ (r_TOGGLE_1HZ)
+     INV:I->O              1   0.255   0.681  o_led_drive_D31_INV_0 (o_led_drive_D3_OBUF)
+     OBUF:I->O                 2.912          o_led_drive_D3_OBUF (o_led_drive_D3)
+    ----------------------------------------
+    Total                      5.176ns (3.692ns logic, 1.484ns route)
+                                       (71.3% logic, 28.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_CLK_1'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            r_dout_PDM1 (FF)
+  Destination:       o_PDM_1 (PAD)
+  Source Clock:      i_CLK_1 rising
+
+  Data Path: r_dout_PDM1 to o_PDM_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  r_dout_PDM1 (r_dout_PDM1)
+     OBUF:I->O                 2.912          o_PDM_1_OBUF (o_PDM_1)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'i_CLK_2'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.118ns (Levels of Logic = 1)
+  Source:            r_dout_PDM2 (FF)
+  Destination:       o_PDM_2 (PAD)
+  Source Clock:      i_CLK_2 rising
+
+  Data Path: r_dout_PDM2 to o_PDM_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.525   0.681  r_dout_PDM2 (r_dout_PDM2)
+     OBUF:I->O                 2.912          o_PDM_2_OBUF (o_PDM_2)
+    ----------------------------------------
+    Total                      4.118ns (3.437ns logic, 0.681ns route)
+                                       (83.5% logic, 16.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock _n0662
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+r_TOGGLE_100K  |         |         |    6.550|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_CLK_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+_n0662         |         |    1.380|         |         |
+i_CLK_1        |    4.211|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_CLK_2
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+_n0662         |         |    1.380|         |         |
+i_CLK_2        |    4.211|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock i_sys_clk_50M
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+i_sys_clk_50M  |    4.846|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock r_TOGGLE_100K
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+r_TOGGLE_100K  |    4.082|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.98 secs
+ 
+--> 
+
+Total memory usage is 264200 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   19 (   0 filtered)
+Number of infos    :   12 (   0 filtered)
+
